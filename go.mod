@@ -1,4 +1,4 @@
-module github.com/jpillora/go-tcp-proxy
+module github.com/huleTW/go-tcp-proxy
 
 go 1.13
 

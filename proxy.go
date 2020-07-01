@@ -2,6 +2,7 @@ package proxy
 
 import (
 	"crypto/tls"
+	"fmt"
 	"io"
 	"net"
 )
@@ -129,7 +130,7 @@ func (p *Proxy) pipe(src, dst io.ReadWriter) {
 			return
 		}
 		b := buff[:n]
-
+		fmt.Print(b)
 		//execute match
 		if p.Matcher != nil {
 			p.Matcher(b)

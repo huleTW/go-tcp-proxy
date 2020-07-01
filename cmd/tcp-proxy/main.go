@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/jpillora/go-tcp-proxy"
+	"github.com/huleTW/go-tcp-proxy"
 )
 
 var (
@@ -17,7 +17,7 @@ var (
 	logger  proxy.ColorLogger
 
 	localAddr   = flag.String("l", ":9999", "local address")
-	remoteAddr  = flag.String("r", "localhost:80", "remote address")
+	remoteAddr  = flag.String("r", "localhost:8080", "remote address")
 	verbose     = flag.Bool("v", false, "display server actions")
 	veryverbose = flag.Bool("vv", false, "display server actions and all tcp data")
 	nagles      = flag.Bool("n", false, "disable nagles algorithm")
